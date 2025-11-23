@@ -1,0 +1,64 @@
+// Ultra-wide and large monitors
+@mixin xxl {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1600px) and (max-width: 1919px) {
+    @content;
+  }
+}
+
+// Your existing breakpoints optimized
+@mixin lg {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+// Ultra-small screens
+@mixin xxxs {
+  @media (max-width: 240px) {
+    @content;
+  }
+}
+
+// Tablet landscape specific
+@mixin tablet-landscape {
+  @media (min-width: 739px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Mobile landscape specific
+@mixin mobile-landscape {
+  @media (max-width: 738px) and (orientation: landscape) {
+    @content;
+  }
+}
